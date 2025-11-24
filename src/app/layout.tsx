@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Navbar } from "@/components/layout/Navbar";
+import { Footer } from "@/components/layout/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,50 +15,50 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://afonjadeals.ng/'),
+  metadataBase: new URL("https://afonjadeals.ng/"),
   title: {
-    default: 'Best Online Deals, Discounts & Coupon Codes | Save Big Today',
-    template: '%s | Shop Smarter with Daily Deals',
+    default: "Best Online Deals, Discounts & Coupon Codes | Save Big Today",
+    template: "%s | Shop Smarter with Daily Deals",
   },
   description:
-    'Discover the latest and greatest deals, discounts, and promo codes for shopping, travel, web hosting, software, and more. Save money every day!',
+    "Discover the latest and greatest deals, discounts, and promo codes for shopping, travel, web hosting, software, and more. Save money every day!",
   keywords: [
-    'coupon codes',
-    'discounts',
-    'online deals',
-    'shopping coupons',
-    'travel discounts',
-    'web hosting promo',
-    'save money',
-    'promo codes',
+    "coupon codes",
+    "discounts",
+    "online deals",
+    "shopping coupons",
+    "travel discounts",
+    "web hosting promo",
+    "save money",
+    "promo codes",
   ],
   openGraph: {
-    title: 'Best Online Deals & Promo Codes | Save on Shopping & Travel',
+    title: "Best Online Deals & Promo Codes | Save on Shopping & Travel",
     description:
-      'Your one-stop destination for daily deals, discounts, and coupon codes for eCommerce, travel, hosting, and more.',
-    url: 'https://afonjadeals.ng/',
-    siteName: 'Example Deals',
+      "Your one-stop destination for daily deals, discounts, and coupon codes for eCommerce, travel, hosting, and more.",
+    url: "https://afonjadeals.ng/",
+    siteName: "Example Deals",
     images: [
       {
-        url: 'https://afonjadeals.ng/og-image.jpg',
+        url: "https://afonjadeals.ng/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: 'Save with the best daily online deals',
+        alt: "Save with the best daily online deals",
       },
     ],
-    locale: 'en_US',
-    type: 'website',
+    locale: "en_US",
+    type: "website",
   },
   twitter: {
-    card: 'summary_large_image',
-    title: 'Shop Smarter with Daily Deals & Promo Codes',
+    card: "summary_large_image",
+    title: "Shop Smarter with Daily Deals & Promo Codes",
     description:
-      'Find verified coupons and discounts for your favorite products and services.',
-    images: ['https://afonjadeals.ng/twitter-card.jpg'],
+      "Find verified coupons and discounts for your favorite products and services.",
+    images: ["https://afonjadeals.ng/twitter-card.jpg"],
   },
   icons: {
-    icon: '/brand/favicon.ico',
-    apple: '/apple-touch-icon.png',
+    icon: "/brand/favicon.ico",
+    apple: "/apple-touch-icon.png",
   },
 };
 
@@ -70,7 +72,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <Navbar />
+        <div className="min-h-screen flex flex-col bg-white">{children}</div>
+        <Footer />
       </body>
     </html>
   );
