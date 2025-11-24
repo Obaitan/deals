@@ -16,7 +16,7 @@ import brandsData from "@/data/brands.json";
 
 export default function Home() {
   const featuredProducts = productsData.slice(0, 4);
-  const topCoupons = couponsData.slice(0, 3);
+  const topCoupons = couponsData.slice(0, 4);
   const featuredCategories = categoriesData.slice(0, 6);
   const popularBrands = brandsData.slice(0, 6);
 
@@ -56,7 +56,7 @@ export default function Home() {
         {/* Categories Section */}
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
-            <div className="flex justify-between items-end mb-8">
+            <div className="flex justify-between items-end mb-4">
               <div>
                 <h2 className="text-2xl font-bold text-gray-900 mb-2">Browse Categories</h2>
                 <p className="text-gray-500">Find exactly what you need</p>
@@ -77,7 +77,7 @@ export default function Home() {
         {/* Trending Deals Section */}
         <section className="py-16">
           <div className="container mx-auto px-4">
-            <div className="flex items-center gap-3 mb-8">
+            <div className="flex items-center gap-3 mb-4">
               <div className="bg-orange-100 p-2 rounded-lg">
                 <Zap className="h-6 w-6 text-orange-600" />
               </div>
@@ -98,7 +98,7 @@ export default function Home() {
         {/* Popular Brands Section */}
         <section className="py-16 bg-white border-y border-gray-100">
           <div className="container mx-auto px-4">
-            <div className="flex items-center gap-3 mb-8">
+            <div className="flex items-center gap-3 mb-4">
               <div className="bg-blue-100 p-2 rounded-lg">
                 <Star className="h-6 w-6 text-blue-600" />
               </div>
@@ -116,7 +116,7 @@ export default function Home() {
         {/* Top Coupons Section */}
         <section className="py-16 bg-emerald-50/50">
           <div className="container mx-auto px-4">
-            <div className="flex items-center gap-3 mb-8">
+            <div className="flex items-center gap-3 mb-4">
               <div className="bg-emerald-100 p-2 rounded-lg">
                 <Tag className="h-6 w-6 text-emerald-600" />
               </div>
@@ -126,7 +126,7 @@ export default function Home() {
               </div>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5">
               {topCoupons.map((coupon) => (
                 <CouponCard key={coupon.id} coupon={coupon as any} />
               ))}

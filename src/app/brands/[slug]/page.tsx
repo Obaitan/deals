@@ -56,8 +56,8 @@ export default async function BrandPage({ params }: PageProps) {
         <div className="container mx-auto px-4 py-12">
           {/* Coupons Section */}
           <div className="mb-16">
-            <h2 className="text-xl font-bold text-gray-900 mb-6">Active Coupons</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <h2 className="text-xl font-bold text-gray-900 mb-4">Active Coupons</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5">
               {coupons.map((coupon) => (
                 <CouponCard key={coupon.id} coupon={coupon as any} />
               ))}
@@ -66,9 +66,9 @@ export default async function BrandPage({ params }: PageProps) {
 
           {/* Products Section */}
           <div>
-            <h2 className="text-xl font-bold text-gray-900 mb-6">Latest Deals</h2>
+            <h2 className="text-xl font-bold text-gray-900 mb-4">Latest Deals</h2>
             {products.length > 0 ? (
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
                 {products.map((product) => (
                   <ProductCard key={product.id} product={product} />
                 ))}
