@@ -1,0 +1,8 @@
+[
+  { "slug": "electronics", "name": "Electronics", "image": "https://placehold.co/400x300/png?text=Electronics" },
+  { "slug": "phones", "name": "Phones", "image": "https://placehold.co/400x300/png?text=Phones" },
+  { "slug": "fashion", "name": "Fashion", "image": "https://placehold.co/400x300/png?text=Fashion" },
+  { "slug": "home-living", "name": "Home & Living", "image": "https://placehold.co/400x300/png?text=Home" },
+  { "slug": "gadgets", "name": "Gadgets", "image": "https://placehold.co/400x300/png?text=Gadgets" },
+  { "slug": "beauty-health", "name": "Beauty & Health", "image": "https://placehold.co/400x300/png?text=Beauty" }
+]

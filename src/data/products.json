@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "name": "Oraimo FreePods 4",
+    "price": 28500,
+    "oldPrice": 35000,
+    "discount": 19,
+    "brand": "Oraimo",
+    "category": "Electronics",
+    "store": "Jumia",
+    "image": "https://placehold.co/600x600/png?text=Oraimo+FreePods"
+  },
+  {
+    "id": 2,
+    "name": "Samsung Galaxy A14",
+    "price": 115000,
+    "oldPrice": 130000,
+    "discount": 12,
+    "brand": "Samsung",
+    "category": "Phones",
+    "store": "Konga",
+    "image": "https://placehold.co/600x600/png?text=Samsung+A14"
+  },
+  {
+    "id": 3,
+    "name": "Men's Casual Sneakers",
+    "price": 15000,
+    "oldPrice": 25000,
+    "discount": 40,
+    "brand": "Generic",
+    "category": "Fashion",
+    "store": "AliExpress",
+    "image": "https://placehold.co/600x600/png?text=Sneakers"
+  },
+  {
+    "id": 4,
+    "name": "Xiaomi Redmi Note 12",
+    "price": 180000,
+    "oldPrice": 210000,
+    "discount": 14,
+    "brand": "Xiaomi",
+    "category": "Phones",
+    "store": "Jumia",
+    "image": "https://placehold.co/600x600/png?text=Redmi+Note+12"
+  },
+  {
+    "id": 5,
+    "name": "Portable Blender",
+    "price": 8500,
+    "oldPrice": 12000,
+    "discount": 29,
+    "brand": "Generic",
+    "category": "Home & Living",
+    "store": "AliExpress",
+    "image": "https://placehold.co/600x600/png?text=Blender"
+  },
+  {
+    "id": 6,
+    "name": "Apple Watch Series 8",
+    "price": 350000,
+    "oldPrice": 400000,
+    "discount": 12,
+    "brand": "Apple",
+    "category": "Gadgets",
+    "store": "Konga",
+    "image": "https://placehold.co/600x600/png?text=Apple+Watch"
+  },
+  {
+    "id": 7,
+    "name": "Nivea Body Lotion",
+    "price": 4500,
+    "oldPrice": 5500,
+    "discount": 18,
+    "brand": "Nivea",
+    "category": "Beauty & Health",
+    "store": "Jumia",
+    "image": "https://placehold.co/600x600/png?text=Nivea+Lotion"
+  },
+  {
+    "id": 8,
+    "name": "Sony WH-1000XM5",
+    "price": 250000,
+    "oldPrice": 300000,
+    "discount": 17,
+    "brand": "Sony",
+    "category": "Electronics",
+    "store": "Amazon",
+    "image": "https://placehold.co/600x600/png?text=Sony+Headphones"
+  }
+]

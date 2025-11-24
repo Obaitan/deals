@@ -1,0 +1,7 @@
+[
+  { "slug": "jumia", "name": "Jumia", "logo": "https://placehold.co/200x200/png?text=Jumia" },
+  { "slug": "konga", "name": "Konga", "logo": "https://placehold.co/200x200/png?text=Konga" },
+  { "slug": "aliexpress", "name": "AliExpress", "logo": "https://placehold.co/200x200/png?text=AliExpress" },
+  { "slug": "amazon", "name": "Amazon", "logo": "https://placehold.co/200x200/png?text=Amazon" },
+  { "slug": "dominos", "name": "Domino's", "logo": "https://placehold.co/200x200/png?text=Dominos" }
+]
