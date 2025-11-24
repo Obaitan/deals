@@ -35,9 +35,9 @@ export default async function CategoryPage({ params }: PageProps) {
       <main className="flex-1 py-8">
         <div className="container mx-auto px-4">
           {/* Header */}
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-4 gap-4">
             <div>
-              <h1 className="text-3xl font-bold text-gray-900 mb-2">{category.name}</h1>
+              <h1 className="text-2xl font-bold text-gray-900 mb-1">{category.name}</h1>
               <p className="text-gray-500">Found {products.length} deals</p>
             </div>
             
