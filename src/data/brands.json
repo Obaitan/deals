@@ -1,8 +1,52 @@
 [
-  { "slug": "oraimo", "name": "Oraimo", "logo": "https://placehold.co/200x200/png?text=Oraimo" },
-  { "slug": "samsung", "name": "Samsung", "logo": "https://placehold.co/200x200/png?text=Samsung" },
-  { "slug": "apple", "name": "Apple", "logo": "https://placehold.co/200x200/png?text=Apple" },
-  { "slug": "xiaomi", "name": "Xiaomi", "logo": "https://placehold.co/200x200/png?text=Xiaomi" },
-  { "slug": "nivea", "name": "Nivea", "logo": "https://placehold.co/200x200/png?text=Nivea" },
-  { "slug": "sony", "name": "Sony", "logo": "https://placehold.co/200x200/png?text=Sony" }
+  {
+    "slug": "oraimo",
+    "name": "Oraimo",
+    "logo": "https://placehold.co/200x200/png?text=Oraimo"
+  },
+  {
+    "slug": "samsung",
+    "name": "Samsung",
+    "logo": "https://placehold.co/200x200/png?text=Samsung"
+  },
+  {
+    "slug": "apple",
+    "name": "Apple",
+    "logo": "https://placehold.co/200x200/png?text=Apple"
+  },
+  {
+    "slug": "xiaomi",
+    "name": "Xiaomi",
+    "logo": "https://placehold.co/200x200/png?text=Xiaomi"
+  },
+  {
+    "slug": "nivea",
+    "name": "Nivea",
+    "logo": "https://placehold.co/200x200/png?text=Nivea"
+  },
+  {
+    "slug": "sony",
+    "name": "Sony",
+    "logo": "https://placehold.co/200x200/png?text=Sony"
+  },
+  {
+    "slug": "dominos",
+    "name": "Domino's",
+    "logo": "https://placehold.co/200x200/png?text=Domino's"
+  },
+  {
+    "slug": "nike",
+    "name": "Nike",
+    "logo": "https://placehold.co/200x200/png?text=Nike"
+  },
+  {
+    "slug": "addidas",
+    "name": "Addidas",
+    "logo": "https://placehold.co/200x200/png?text=Addidas"
+  },
+  {
+    "slug": "puma",
+    "name": "Puma",
+    "logo": "https://placehold.co/200x200/png?text=Puma"
+  }
 ]
