@@ -1,7 +1,15 @@
 "use client";
 
 import Link from "next/link";
-import { Search, Menu, ShoppingBag, Tag, Store, Layers } from "lucide-react";
+import {
+  Search,
+  Menu,
+  ShoppingBag,
+  Tag,
+  Store,
+  Layers,
+  Calendar,
+} from "lucide-react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -12,7 +20,6 @@ import {
   SheetTitle,
 } from "@/components/ui/sheet";
 import { useState } from "react";
-
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 
@@ -21,6 +28,7 @@ export function Navbar() {
   const pathname = usePathname();
 
   const navLinks = [
+    { href: "/todays-deals", label: "Today's Deals", icon: Calendar },
     { href: "/categories", label: "Categories", icon: Layers },
     { href: "/brands", label: "Brands", icon: Tag },
     { href: "/stores", label: "Stores", icon: Store },

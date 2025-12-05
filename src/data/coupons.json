@@ -43,5 +43,32 @@
     "expiry": "2025-11-20",
     "type": "Code",
     "discount": "BOGO"
+  },
+  {
+    "id": 6,
+    "title": "Flash Sale - 30% Off Electronics",
+    "code": "FLASH30",
+    "store": "Jumia",
+    "expiry": "2025-11-28",
+    "type": "Code",
+    "discount": "30%"
+  },
+  {
+    "id": 7,
+    "title": "Last Day Mega Discount",
+    "code": "MEGA20",
+    "store": "Konga",
+    "expiry": "2025-11-28",
+    "type": "Code",
+    "discount": "20%"
+  },
+  {
+    "id": 8,
+    "title": "Express Delivery Deal",
+    "code": "",
+    "store": "AliExpress",
+    "expiry": "2025-11-28",
+    "type": "Automatic",
+    "discount": "Free Express"
   }
 ]

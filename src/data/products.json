@@ -8,7 +8,8 @@
     "brand": "Oraimo",
     "category": "Electronics",
     "store": "Jumia",
-    "image": "https://placehold.co/600x600/png?text=Oraimo+FreePods"
+    "image": "https://placehold.co/600x600/png?text=Oraimo+FreePods",
+    "expiry": "2025-11-28"
   },
   {
     "id": 2,
@@ -19,7 +20,8 @@
     "brand": "Samsung",
     "category": "Phones",
     "store": "Konga",
-    "image": "https://placehold.co/600x600/png?text=Samsung+A14"
+    "image": "https://placehold.co/600x600/png?text=Samsung+A14",
+    "expiry": "2025-12-15"
   },
   {
     "id": 3,
@@ -30,7 +32,8 @@
     "brand": "Generic",
     "category": "Fashion",
     "store": "AliExpress",
-    "image": "https://placehold.co/600x600/png?text=Sneakers"
+    "image": "https://placehold.co/600x600/png?text=Sneakers",
+    "expiry": "2025-11-28"
   },
   {
     "id": 4,
@@ -41,7 +44,8 @@
     "brand": "Xiaomi",
     "category": "Phones",
     "store": "Jumia",
-    "image": "https://placehold.co/600x600/png?text=Redmi+Note+12"
+    "image": "https://placehold.co/600x600/png?text=Redmi+Note+12",
+    "expiry": "2025-11-30"
   },
   {
     "id": 5,
@@ -52,7 +56,8 @@
     "brand": "Generic",
     "category": "Home & Living",
     "store": "AliExpress",
-    "image": "https://placehold.co/600x600/png?text=Blender"
+    "image": "https://placehold.co/600x600/png?text=Blender",
+    "expiry": "2025-11-28"
   },
   {
     "id": 6,
@@ -63,7 +68,8 @@
     "brand": "Apple",
     "category": "Gadgets",
     "store": "Konga",
-    "image": "https://placehold.co/600x600/png?text=Apple+Watch"
+    "image": "https://placehold.co/600x600/png?text=Apple+Watch",
+    "expiry": "2025-12-01"
   },
   {
     "id": 7,
@@ -74,7 +80,8 @@
     "brand": "Nivea",
     "category": "Beauty & Health",
     "store": "Jumia",
-    "image": "https://placehold.co/600x600/png?text=Nivea+Lotion"
+    "image": "https://placehold.co/600x600/png?text=Nivea+Lotion",
+    "expiry": "2025-12-05"
   },
   {
     "id": 8,
@@ -85,6 +92,7 @@
     "brand": "Sony",
     "category": "Electronics",
     "store": "Amazon",
-    "image": "https://placehold.co/600x600/png?text=Sony+Headphones"
+    "image": "https://placehold.co/600x600/png?text=Sony+Headphones",
+    "expiry": "2025-11-28"
   }
 ]

@@ -57,8 +57,8 @@ export default function Home() {
         <div className="container mx-auto px-6 md:px-10">
           <div className="flex justify-between items-end mb-4">
             <div>
-              <h2 className="text-2xl font-bold text-gray-900 mb-2">
-                Browse Categories
+              <h2 className="text-2xl font-bold text-gray-900 mb-1">
+                Browse Products
               </h2>
               <p className="text-gray-500">Find exactly what you need</p>
             </div>
