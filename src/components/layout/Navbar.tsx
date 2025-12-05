@@ -14,12 +14,17 @@ import {
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
+import { AllDealsMegaMenu, BrandsStoresMegaMenu } from "./MegaMenu";
 
 export function Navbar() {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const pathname = usePathname();
 
-  const navLinks = [
+  // Simple nav links (no mega menu)
+  const simpleNavLinks = [{ href: "/last-day-deals", label: "Last Day Deals" }];
+
+  // All nav links for mobile menu
+  const allNavLinks = [
     { href: "/last-day-deals", label: "Last Day Deals" },
     { href: "/all-deals", label: "All Deals" },
     { href: "/brands-and-stores", label: "Brands & Stores" },
@@ -44,7 +49,8 @@ export function Navbar() {
 
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex items-center gap-6 text-[15px] font-medium text-gray-600">
-          {navLinks.map((link) => {
+          {/* Simple Links */}
+          {simpleNavLinks.map((link) => {
             const isActive = pathname.startsWith(link.href);
             return (
               <Link
@@ -61,6 +67,14 @@ export function Navbar() {
               </Link>
             );
           })}
+
+          {/* Mega Menu: All Deals */}
+          <AllDealsMegaMenu isActive={pathname.startsWith("/all-deals")} />
+
+          {/* Mega Menu: Brands & Stores */}
+          <BrandsStoresMegaMenu
+            isActive={pathname.startsWith("/brands-and-stores")}
+          />
         </nav>
 
         {/* Search Bar (Desktop) */}
@@ -95,7 +109,7 @@ export function Navbar() {
             <SheetContent side="right">
               <SheetTitle className="text-left mb-4">Menu</SheetTitle>
               <nav className="flex flex-col gap-4 mt-4">
-                {navLinks.map((link) => (
+                {allNavLinks.map((link) => (
                   <Link
                     key={link.href}
                     href={link.href}
