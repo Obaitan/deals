@@ -1,15 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import {
-  Search,
-  Menu,
-  ShoppingBag,
-  Tag,
-  Store,
-  Layers,
-  Calendar,
-} from "lucide-react";
+import { Search, Menu } from "lucide-react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -28,11 +20,9 @@ export function Navbar() {
   const pathname = usePathname();
 
   const navLinks = [
-    { href: "/todays-deals", label: "Today's Deals", icon: Calendar },
-    { href: "/categories", label: "Categories", icon: Layers },
-    { href: "/brands", label: "Brands", icon: Tag },
-    { href: "/stores", label: "Stores", icon: Store },
-    { href: "/coupons", label: "Coupons", icon: ShoppingBag },
+    { href: "/last-day-deals", label: "Last Day Deals" },
+    { href: "/all-deals", label: "All Deals" },
+    { href: "/brands-and-stores", label: "Brands & Stores" },
   ];
 
   return (
@@ -53,7 +43,7 @@ export function Navbar() {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden lg:flex items-center gap-6 text-sm font-medium text-gray-600">
+        <nav className="hidden lg:flex items-center gap-6 text-[15px] font-medium text-gray-600">
           {navLinks.map((link) => {
             const isActive = pathname.startsWith(link.href);
             return (
@@ -67,7 +57,6 @@ export function Navbar() {
                     : "hover:text-emerald-600"
                 )}
               >
-                <link.icon className="h-4 w-4" />
                 {link.label}
               </Link>
             );
@@ -112,7 +101,6 @@ export function Navbar() {
                     href={link.href}
                     className="flex items-center gap-3 text-lg font-medium text-gray-600 hover:text-emerald-600 p-2 rounded-md hover:bg-emerald-50 transition-all"
                   >
-                    <link.icon className="h-5 w-5" />
                     {link.label}
                   </Link>
                 ))}
