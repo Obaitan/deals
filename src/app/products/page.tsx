@@ -63,7 +63,7 @@ export default function ProductsPage() {
   const availableBrands = brandsData.map((b) => b.name);
 
   return (
-    <main className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-gray-50 pb-14 pt-8">
       <div className="container mx-auto px-6 md:px-10 py-8">
         {/* Page Header */}
         <div className="mb-6">
@@ -73,9 +73,18 @@ export default function ProductsPage() {
           </p>
         </div>
 
-        <div className="flex flex-col lg:flex-row gap-6">
+        <div className="flex flex-col lg:flex-row gap-x-10 gap-y-6">
+          {/* Category Sidebar (Right) */}
+          <aside className="lg:w-60">
+            <CategorySidebar
+              categories={categoriesData}
+              selectedCategory={selectedCategory}
+              categoryUrlBase="/products"
+            />
+          </aside>
+
           {/* Main Content Area */}
-          <div className="flex-1 order-2 lg:order-1">
+          <div className="flex-1">
             {/* Filters */}
             <ProductFilters
               filters={filters}
@@ -92,7 +101,7 @@ export default function ProductsPage() {
             </div>
 
             {filteredProducts.length > 0 ? (
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-7">
                 {filteredProducts.map((product) => (
                   <ProductCard key={product.id} product={product as any} />
                 ))}
@@ -106,15 +115,6 @@ export default function ProductsPage() {
               </div>
             )}
           </div>
-
-          {/* Category Sidebar (Right) */}
-          <aside className="lg:w-64 order-1 lg:order-2">
-            <CategorySidebar
-              categories={categoriesData}
-              selectedCategory={selectedCategory}
-              categoryUrlBase="/products"
-            />
-          </aside>
         </div>
       </div>
     </main>

@@ -78,11 +78,11 @@ export function Navbar() {
         {/* Search Bar (Desktop) */}
         <div className="hidden lg:flex flex-1 max-w-xs relative">
           <div className="relative w-full">
-            <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-gray-500" />
+            <Search className="absolute left-4 top-3 size-4 text-gray-500" />
             <Input
               type="search"
               placeholder="Search products, brands, coupons..."
-              className="w-full pl-9 bg-gray-50 border-gray-200 focus:bg-white focus:border-emerald-500 transition-all rounded-full"
+              className="w-full pl-10 h-10 bg-gray-50 border-gray-200 focus:bg-white focus:border-emerald-500 transition-all rounded-full"
             />
           </div>
         </div>
@@ -95,13 +95,13 @@ export function Navbar() {
             onClick={() => setIsSearchOpen(!isSearchOpen)}
             className="text-gray-600"
           >
-            <Search className="h-5 w-5" />
+            <Search className="size-5" />
           </Button>
 
           <Sheet>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon" className="text-gray-600">
-                <Menu className="h-5 w-5" />
+                <Menu className="size-5" />
               </Button>
             </SheetTrigger>
             <SheetContent side="right">
@@ -126,7 +126,7 @@ export function Navbar() {
       {isSearchOpen && (
         <div className="lg:hidden border-t p-4 bg-white animate-in slide-in-from-top-2">
           <div className="relative">
-            <Search className="absolute left-3 top-3 h-4 w-4 text-gray-500" />
+            <Search className="absolute left-3 top-3 size-4 text-gray-500" />
             <Input
               type="search"
               placeholder="Search..."

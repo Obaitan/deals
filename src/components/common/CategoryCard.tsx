@@ -18,7 +18,7 @@ export function CategoryCard({ category }: CategoryCardProps) {
             fill
             className="object-cover group-hover:scale-105 transition-transform duration-500 opacity-90 group-hover:opacity-100"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+          <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent" />
           <div className="absolute bottom-3 left-3 text-white font-semibold text-lg">
             {category.name}
           </div>

@@ -10,7 +10,7 @@ interface BrandCardProps {
 export function BrandCard({ brand }: BrandCardProps) {
   return (
     <Link href={`/brands/${brand.slug}`}>
-      <Card className="p-4 flex items-center justify-center hover:shadow-md transition-all hover:border-emerald-200 aspect-[3/2]">
+      <Card className="flex items-center justify-center hover:shadow-md transition-all hover:border-emerald-200 aspect-3/2">
         <div className="relative w-full h-full">
           <Image
             src={brand.logo}
