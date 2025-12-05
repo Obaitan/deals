@@ -48,7 +48,7 @@ export function Navbar() {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden lg:flex items-center gap-6 text-[15px] font-medium text-gray-600">
+        <nav className="hidden lg:flex items-center gap-8 text-[15px] font-medium text-gray-600">
           {/* Simple Links */}
           {simpleNavLinks.map((link) => {
             const isActive = pathname.startsWith(link.href);
@@ -69,12 +69,10 @@ export function Navbar() {
           })}
 
           {/* Mega Menu: All Deals */}
-          <AllDealsMegaMenu isActive={pathname.startsWith("/all-deals")} />
+          <AllDealsMegaMenu isActive={pathname.startsWith("/products")} />
 
           {/* Mega Menu: Brands & Stores */}
-          <BrandsStoresMegaMenu
-            isActive={pathname.startsWith("/brands-and-stores")}
-          />
+          <BrandsStoresMegaMenu isActive={pathname.startsWith("/brands")} />
         </nav>
 
         {/* Search Bar (Desktop) */}

@@ -166,7 +166,7 @@ export function AllDealsMegaMenu({ isActive }: { isActive?: boolean }) {
             : "opacity-0 -translate-y-2 pointer-events-none"
         )}
       >
-        <div className="bg-white rounded-xl shadow-2xl border border-gray-100 overflow-hidden w-[400px] lg:w-[720px]">
+        <div className="bg-white rounded-lg shadow-2xl border border-gray-100 overflow-hidden w-[400px] lg:w-[720px]">
           {/* Gradient accent bar */}
           <div className="h-1 bg-linear-to-r from-emerald-400 via-teal-500 to-cyan-500" />
 
@@ -237,7 +237,7 @@ export function AllDealsMegaMenu({ isActive }: { isActive?: boolean }) {
                   {filteredProducts.map((product) => (
                     <li key={product.id}>
                       <Link
-                        href={`/product/${product.id}`}
+                        href={`/products/${product.id}`}
                         className="flex items-center gap-3 px-3 py-2 rounded-lg text-sm text-gray-600 hover:bg-emerald-50 hover:text-emerald-700 transition-colors"
                       >
                         <span className="shrink-0 w-6 h-6 rounded bg-gray-100 flex items-center justify-center text-xs font-medium text-gray-500">
@@ -258,10 +258,10 @@ export function AllDealsMegaMenu({ isActive }: { isActive?: boolean }) {
               <Link
                 href={
                   selectedType === "services"
-                    ? "/all-deals?type=services"
+                    ? "/services"
                     : selectedType === "coupons"
                     ? "/coupons"
-                    : "/all-deals?type=products"
+                    : "/products"
                 }
                 className="mt-4 flex items-center gap-1 px-3 py-2 text-sm font-medium text-emerald-600 hover:text-emerald-700 transition-colors"
               >
@@ -394,7 +394,7 @@ export function BrandsStoresMegaMenu({ isActive }: { isActive?: boolean }) {
             : "opacity-0 -translate-y-2 pointer-events-none"
         )}
       >
-        <div className="bg-white rounded-xl shadow-2xl border border-gray-100 overflow-hidden w-[400px] lg:w-[720px]">
+        <div className="bg-white rounded-lg shadow-2xl border border-gray-100 overflow-hidden w-[400px] lg:w-[720px]">
           {/* Gradient accent bar - Same as All Deals (emerald) */}
           <div className="h-1 bg-linear-to-r from-emerald-400 via-teal-500 to-cyan-500" />
 
@@ -456,7 +456,7 @@ export function BrandsStoresMegaMenu({ isActive }: { isActive?: boolean }) {
                     <Link
                       href={
                         item.type === "brand"
-                          ? `/brands-and-stores/${item.slug}`
+                          ? `/brands/${item.slug}`
                           : `/stores/${item.slug}`
                       }
                       onMouseEnter={() => {
@@ -488,9 +488,7 @@ export function BrandsStoresMegaMenu({ isActive }: { isActive?: boolean }) {
 
               {/* All Brands/Stores Link */}
               <Link
-                href={
-                  selectedType === "stores" ? "/stores" : "/brands-and-stores"
-                }
+                href={selectedType === "stores" ? "/stores" : "/brands"}
                 className="mt-3 flex items-center gap-1 px-3 py-2 text-sm font-medium text-emerald-600 hover:text-emerald-700 transition-colors"
               >
                 {selectedType === "stores" ? "All Stores" : "All Brands"}
@@ -508,7 +506,7 @@ export function BrandsStoresMegaMenu({ isActive }: { isActive?: boolean }) {
                   {filteredProducts.map((product) => (
                     <li key={product.id}>
                       <Link
-                        href={`/product/${product.id}`}
+                        href={`/products/${product.id}`}
                         className="flex items-center gap-3 px-3 py-2 rounded-lg text-sm text-gray-600 hover:bg-emerald-50 hover:text-emerald-700 transition-colors"
                       >
                         <span className="shrink-0 w-6 h-6 rounded bg-gray-100 flex items-center justify-center text-xs font-medium text-gray-500">

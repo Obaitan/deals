@@ -151,7 +151,7 @@ export default function ServicesPage() {
                     key={service.id}
                     className="overflow-hidden group hover:shadow-lg transition-all duration-300 border-gray-100"
                   >
-                    <div className="relative h-32 bg-gradient-to-br from-emerald-50 to-teal-50 flex items-center justify-center">
+                    <div className="relative h-32 bg-linear-to-br from-emerald-50 to-teal-50 flex items-center justify-center">
                       <Badge className="absolute top-2 right-2 bg-red-500 hover:bg-red-600 text-white border-0">
                         -{service.discount}%
                       </Badge>
